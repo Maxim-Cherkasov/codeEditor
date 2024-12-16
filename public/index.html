@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Упрощенный интерфейс редактора кода</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="editor">
+      <script src="vendor/monaco-editor/min/vs/loader.js"></script>
+
+      <section class="select-and-run">
+        <select id="language-select">
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+        </select>
+        <button id="run-button">Run</button>
+      </section>
+
+      <article class="task">
+        <p class="txt">
+          Напишите функцию, которая принимает строку и возвращает значение true.
+        </p>
+      </article>
+
+      <textarea id="result" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
